@@ -1,11 +1,104 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Font Viewer Studio — Privacy Policy</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy Policy for Font Viewer Studio, a Windows font preview and comparison application by Kartinka Studio.">
+  <title>Privacy Policy — Font Viewer Studio</title>
+  <style>
+    :root { color-scheme: light; --ink:#1b2430; --muted:#627080; --line:#e5e9ee; --accent:#245fbb; --bg:#f7f9fc; }
+    * { box-sizing:border-box; }
+    body { margin:0; font:16px/1.7 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif; background:var(--bg); color:var(--ink); }
+    .wrap { max-width:880px; margin:0 auto; padding:44px 22px 72px; }
+    header { display:flex; align-items:center; justify-content:space-between; gap:16px; padding-bottom:28px; }
+    .brand { font-size:19px; font-weight:750; letter-spacing:-.03em; }
+    nav { display:flex; gap:8px; }
+    nav button { cursor:pointer; font:inherit; font-size:14px; font-weight:650; border:1px solid #cbd4df; border-radius:9px; padding:6px 13px; color:var(--ink); background:white; }
+    nav button[aria-pressed="true"] { color:white; background:var(--ink); border-color:var(--ink); }
+    main { background:white; border:1px solid var(--line); border-radius:18px; padding:40px 48px; box-shadow:0 10px 35px #24354b09; }
+    h1 { font-size:clamp(29px,5vw,42px); letter-spacing:-.045em; line-height:1.2; margin:0 0 10px; }
+    h2 { font-size:19px; letter-spacing:-.02em; margin:33px 0 10px; line-height:1.4; }
+    p { margin:10px 0; } ul { margin:10px 0; padding-left:24px; } li { margin:6px 0; }
+    .meta { color:var(--muted); font-size:14px; margin:0 0 30px; }
+    a { color:var(--accent); text-underline-offset:3px; overflow-wrap:anywhere; }
+    footer { color:var(--muted); font-size:13px; padding:24px 4px 0; text-align:center; }
+    [hidden] { display:none !important; }
+    @media(max-width:600px) { .wrap { padding:22px 14px 40px; } main { padding:28px 22px; } header { padding:0 4px 22px; } }
+  </style>
 </head>
 <body>
-  <h1>Font Viewer Studio</h1>
-  <p>Privacy Policy</p>
+  <div class="wrap">
+    <header>
+      <div class="brand">Font Viewer Studio</div>
+      <nav aria-label="Language / Язык">
+        <button type="button" data-lang="en" aria-pressed="true">English</button>
+        <button type="button" data-lang="ru" aria-pressed="false">Русский</button>
+      </nav>
+    </header>
+    <main>
+      <article lang="en" id="policy-en">
+        <h1>Privacy Policy</h1>
+        <p class="meta">Effective date: November 20, 2026 · Developer: Kartinka Studio</p>
+        <h2>1. About the application</h2>
+        <p>Font Viewer Studio is a Windows desktop application for browsing, previewing, and comparing fonts. Its core functions operate locally and do not require registration or an internet connection.</p>
+        <h2>2. Information accessed and processed</h2>
+        <p>To display fonts, the application can enumerate files and folders in locations selected by the user and read supported TTF and OTF font files. File paths may contain personal information, such as a Windows account name.</p>
+        <p>The application also processes preferences (including enabled font sources and the last selected folder) and technical error information. Error logs may contain file paths, exception messages, and stack traces.</p>
+        <h2>3. Local storage</h2>
+        <p>For the Microsoft Store installation, settings and diagnostic logs are stored locally in the application's Windows <strong>LocalState</strong> storage. Temporary font preview files may be stored in <strong>TempState</strong>. These files are not automatically uploaded to the developer.</p>
+        <h2>4. Network access and data sharing</h2>
+        <p>Font Viewer Studio does not include built-in analytics, advertising trackers, or automatic transmission of font files, settings, or error logs to the developer. If you select a network folder, Windows may communicate with the relevant file server to access its contents.</p>
+        <h2>5. Third-party components and platform services</h2>
+        <p>The application uses software components for font processing and rendering, including HarfBuzz. No independent data transmission by these components was identified during source-code review. Windows and Microsoft Store may process diagnostic or operational data independently under Microsoft's own policies and your system settings.</p>
+        <h2>6. Retention and deletion</h2>
+        <p>Local preferences and diagnostic files remain on your device until removed through the application's or Windows' applicable data-management mechanisms. Temporary preview files may be deleted by the application or Windows. To request assistance locating or removing local data, contact the developer.</p>
+        <h2>7. Support requests</h2>
+        <p>If you contact the developer voluntarily, your email, message, and any files you choose to attach will be used to respond to your request and investigate the issue. Do not send sensitive personal information unless necessary. Support communications are not collected automatically by the application.</p>
+        <h2>8. Children's privacy</h2>
+        <p>Font Viewer Studio is a general-purpose font utility and does not intentionally collect personal information from children.</p>
+        <h2>9. Changes to this policy</h2>
+        <p>This policy may be updated when application functionality or applicable requirements change. The revised policy will be published at this address with an updated effective date.</p>
+        <h2>10. Contact</h2>
+        <p>Kartinka Studio<br>Email: <a href="mailto:matveev.design@yandex.ru">matveev.design@yandex.ru</a></p>
+      </article>
+      <article lang="ru" id="policy-ru" hidden>
+        <h1>Политика конфиденциальности</h1>
+        <p class="meta">Дата вступления в силу: 20 ноября 2026 года · Разработчик: Kartinka Studio</p>
+        <h2>1. О приложении</h2>
+        <p>Font Viewer Studio — настольное приложение для Windows, предназначенное для просмотра, предварительного отображения и сравнения шрифтов. Основные функции работают локально и не требуют регистрации или подключения к интернету.</p>
+        <h2>2. Доступ к информации и её обработка</h2>
+        <p>Для отображения шрифтов приложение может получать список файлов и папок в выбранных пользователем расположениях и читать поддерживаемые файлы TTF и OTF. Пути к файлам могут содержать персональные сведения, например имя учётной записи Windows.</p>
+        <p>Приложение также обрабатывает настройки (включая активные источники шрифтов и последнюю выбранную папку) и технические сведения об ошибках. Журналы могут содержать пути к файлам, сообщения исключений и трассировки стека.</p>
+        <h2>3. Локальное хранение</h2>
+        <p>При установке через Microsoft Store настройки и диагностические журналы сохраняются локально в каталоге Windows <strong>LocalState</strong> приложения. Временные файлы предварительного просмотра шрифтов могут храниться в <strong>TempState</strong>. Эти данные не отправляются разработчику автоматически.</p>
+        <h2>4. Сетевой доступ и передача данных</h2>
+        <p>Font Viewer Studio не содержит встроенной аналитики, рекламных трекеров и механизмов автоматической передачи разработчику файлов шрифтов, настроек или журналов ошибок. При выборе сетевой папки Windows может обращаться к соответствующему файловому серверу для чтения её содержимого.</p>
+        <h2>5. Сторонние компоненты и службы платформы</h2>
+        <p>Приложение использует компоненты для обработки и отображения шрифтов, включая HarfBuzz. При анализе исходного кода не выявлена самостоятельная передача данных этими компонентами. Windows и Microsoft Store могут независимо обрабатывать диагностические и технические данные в соответствии с политиками Microsoft и настройками системы.</p>
+        <h2>6. Хранение и удаление</h2>
+        <p>Локальные настройки и журналы остаются на устройстве до удаления доступными средствами приложения или Windows. Временные файлы предварительного просмотра могут удаляться приложением или Windows. За помощью в поиске и удалении локальных данных можно обратиться к разработчику.</p>
+        <h2>7. Обращения в поддержку</h2>
+        <p>Если пользователь добровольно обращается к разработчику, его адрес электронной почты, текст обращения и приложенные им файлы используются для ответа и рассмотрения проблемы. Не следует отправлять чувствительные персональные сведения без необходимости. Приложение не собирает обращения в поддержку автоматически.</p>
+        <h2>8. Конфиденциальность детей</h2>
+        <p>Font Viewer Studio — универсальная утилита для работы со шрифтами; приложение не предназначено для целенаправленного сбора персональных данных детей.</p>
+        <h2>9. Изменения политики</h2>
+        <p>Политика может обновляться при изменении функций приложения или применимых требований. Новая редакция будет опубликована по этому же адресу с обновлённой датой вступления в силу.</p>
+        <h2>10. Контакты</h2>
+        <p>Kartinka Studio<br>Электронная почта: <a href="mailto:matveev.design@yandex.ru">matveev.design@yandex.ru</a></p>
+      </article>
+    </main>
+    <footer>© 2026 Kartinka Studio · Font Viewer Studio</footer>
+  </div>
+  <script>
+    const buttons = document.querySelectorAll('[data-lang]');
+    function setLanguage(lang) {
+      document.getElementById('policy-en').hidden = lang !== 'en';
+      document.getElementById('policy-ru').hidden = lang !== 'ru';
+      buttons.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.lang === lang)));
+      document.documentElement.lang = lang;
+      document.title = (lang === 'ru' ? 'Политика конфиденциальности' : 'Privacy Policy') + ' — Font Viewer Studio';
+    }
+    buttons.forEach(button => button.addEventListener('click', () => setLanguage(button.dataset.lang)));
+  </script>
 </body>
 </html>
